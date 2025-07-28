@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nilesh Golande | Data Analyst & Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    .atom-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .atom {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #00d4ff;
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+      transition: transform 0.3s ease;
+    }
+
+    .atom:hover {
+      transform: translateX(40px) scale(1.3);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); opacity: 0.7; }
+      50% { transform: translateY(-30px); opacity: 1; }
+      100% { transform: translateY(0px); opacity: 0.7; }
+    }
+  </style>
+</head>
+<body>
+  <div class="atom-background">
+    <div class="atom" style="top:10%; left:20%;"></div>
+    <div class="atom" style="top:30%; left:60%;"></div>
+    <div class="atom" style="top:50%; left:40%;"></div>
+    <div class="atom" style="top:70%; left:80%;"></div>
+    <div class="atom" style="top:85%; left:10%;"></div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="animate">Hi, I'm <span>Nilesh Golande</span></h1>
+      <p class="animate delay">Data Analyst & Scientist</p>
+      <a href="#projects" class="btn animate delay2">View Projects</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="animate">About Me</h2>
+      <p class="animate delay">I'm a passionate data analyst and scientist with experience in Python, Pandas, NumPy, Power BI, SQL, and machine learning. I love turning data into actionable insights and building data-driven solutions.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="animate">Projects</h2>
+      <div class="project animate delay">
+        <h3>Conversational Image Recognition Chatbot</h3>
+        <p>Developed a smart chatbot that interprets and responds based on image inputs using Torch, PIL, and Django.</p>
+      </div>
+      <div class="project animate delay2">
+        <h3>Cargo Planning Data Pipeline</h3>
+        <p>Automated a shipment pipeline using Azure Logic Apps, Databricks, and MongoDB for real-time processing.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Nilesh Golande. All rights reserved.</p>
+  </footer>
+</body>
+</html>
