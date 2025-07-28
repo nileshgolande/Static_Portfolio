@@ -37,9 +37,14 @@
       50% { transform: translateY(-30px); opacity: 1; }
       100% { transform: translateY(0px); opacity: 0.7; }
     }
+
+    .head-wrap{
+      position: relative;
+    }
   </style>
 </head>
 <body>
+  <section class="head-wrap">
   <div class="atom-background">
     <div class="atom" style="top:10%; left:20%;"></div>
     <div class="atom" style="top:30%; left:60%;"></div>
@@ -55,7 +60,7 @@
       <a href="#projects" class="btn animate delay2">View Projects</a>
     </div>
   </header>
-
+</section>
   <section id="about" class="section">
     <div class="container">
       <h2 class="animate">About Me</h2>
@@ -71,7 +76,7 @@
         <p>Developed a smart chatbot that interprets and responds based on image inputs using Torch, PIL, and Django.</p>
       </div>
       <div class="project animate delay2">
-        <h3>Cargo Planning Data Pipeline</h3>
+        <h3>Cargo capacity Planning Data Pipeline</h3>
         <p>Automated a shipment pipeline using Azure Logic Apps, Databricks, and MongoDB for real-time processing.</p>
       </div>
     </div>
